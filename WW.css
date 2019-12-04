@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-size: 18px;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.message-error {
+  color: red;
+}
+
+/* register */
+
+.register-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: url(images/test.png) center center no-repeat;
+    background-size: cover;
+}
+
+.register-container>* {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.register-container input{
+    color: white;
+}
+
+.register-container h2 {
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    color: white;
+}
+
+.register-container a {
+    color: white;
+    text-decoration: none;
+}
+.register-container a:hover{
+    text-decoration: underline;
+}
+
+.register-container button {
+    width: 120px;
+    height: 38px;
+    padding: 10px;
+    background: #703E03;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    margin: 12px 0;
+}
+.register-container button:hover {
+    cursor: pointer;
+    background: #B3660C;
+}
+
+/* log in */
+.log-in-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* background: url(images/background.png) center center no-repeat; */
+    background: url(images/test.png) center center no-repeat;
+    background-size: cover;
+}
+
+.log-in-container>* {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.log-in-container input{
+    color: white;
+}
+
+.log-in-container h2 {
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    color: white
+}
+
+.log-in-container a {
+    color: white;
+    text-decoration: none;
+}
+.log-in-container a:hover{
+    text-decoration: underline;
+}
+
+.log-in-container button {
+    width: 120px;
+    height: 38px;
+    padding: 10px;
+    background: #703E03;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    margin: 12px 0;
+}
+.log-in-container button:hover {
+    cursor: pointer;
+    background: #B3660C;
+}
+
+.form-content {
+    width: 100%;
+    overflow: hidden;
+    font-size: 15px;
+    padding: 8px 0;
+    margin: 8px 0;
+}
+
+.input-wrapper {
+    width: 100%;
+    overflow: hidden;
+    font-size: 18px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 0.5px white solid;
+}
+
+.input-wrapper input{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+}
+
+.form-content .input-wrapper{
+    color: white;
+}
+
+.form-add-conversation .input-wrapper{
+    color: black;
+}
+
+.input-wrapper ::placeholder {
+    color: rgb(182, 179, 179);
+}
+
+/* chatbox */
+.box-chat{
+    display: flex;
+    justify-content: space-between;
+}
+.box-chat a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.box-chat i{
+    padding-right: 10px;
+}
+
+.left{
+    margin-top: 0px;
+    height: 100vh;
+    width: 20%; 
+    background-color: #142246;
+}
+.right{
+    height: 100vh;
+    width: 30%;
+    background-color: #f2f2f2;
+    overflow: hidden;
+}
+
+.center{
+    height: 97vh;
+    width: 50%;
+}
+
+.name-inf {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    width: 98%;
+    height: 50px;
+    transition: 0.4s;
+    border: 1px solid black;
+    text-align: center;
+    margin: 2px;
+}
+.name-inf:hover {
+    background-color: #ccc;
+}
+
+.inf{
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+.player{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+   
+}
+.inf-user{
+    display: flex;
+    flex-direction: column ;
+    font-size: 25px;
+    
+}
+
+.name-user{
+    display: flex;
+    flex-direction: column-reverse;
+    border: 1px solid #ffffff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.user-email{
+    margin:15px;
+    color: #ffffff;
+        white-space: nowrap; 
+        width: 200px; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+      
+}
+.user-email:hover{
+    overflow: visible;
+    font-size: 13px;
+}
+
+.img{
+    margin-top:15px;
+    border-radius: 50%;
+    display: block;
+    width: 100px;
+    height:100px;
+    border: 1px solid #fff;
+}
+
+.form-chat{
+    height: 5%;
+    border: 3px groove;
+    display: flex;
+    align-items: flex-end;
+}
+.form-chat .message-input-wrapper, .message-input{
+    width: 100%;
+}
+
+.system-message{
+    height: 30%; 
+    border: 3px groove;
+    background-color: #f2f2f2;
+    overflow-y: scroll;
+}
+.chat{
+    height: 68%;
+    border: 3px groove;
+    overflow-y: scroll;
+    background: white;
+}
+.chat button{
+    height:2%;
+    width: 15%;
+}
+.menu{
+    padding: 20px;
+    color: #fff;
+}
+.menu:hover{
+    background-color:#263355;
+}
+.menu i {
+    width: 20px;
+    height: 20px;;
+}
+
+.system{
+    color: red;
+}
+
+.inf-player{
+    height: 63%;
+    background-color: #ffffff;
+    overflow-y: scroll;   
+}
+
+.btn-inf button{
+    height:40px;
+    width:100px;
+    margin: 5px;
+}
+.room{
+    margin:10px;
+}
+.ava{
+    border-radius:3px;
+    width: 30px;
+    height:30px;
+}
+
+.chat .message-chat {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.chat .your {
+  text-align: right;
+}
+
+.chat .message-chat span {
+  display: inline-block;
+  max-width: calc(50% - 10px);
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  word-break: break-word;
+}
+
+.btn-icon{
+    margin: 3px;
+}
+
+/* Instruction */
+.instruction {
+    padding: 20px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+.instruction::after{
+    content: "";
+    background: url(images/wolf_howling_at_moon.jpg) center center no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.instruction .haha {
+    font-size: 38px;
+}
+
+.teamVillager{
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.teamWolf {
+    font-size: 25px;
+    font-weight: lighter;    
+}
+
+/* create room */
+.create-room {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: url(images/test.png) center center no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.create-room >*{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.create-room h2{
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+    padding: 15px 0;
+}
+
+.create-room button{
+    width: 120px;
+    height: 38px;
+    padding: 10px;
+    background: #703E03;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    margin: 12px 0;
+}
+.create-room button:hover{
+    cursor: pointer;
+    background: #B3660C;
+}
+
+.comingSoon {
+    position: relative;
+    display: inline-block;
+}
+.comingSoon .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #ffffff;
+    color: blueviolet;
+    font-size: 10px;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px
+}
+.comingSoon:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* coming soon */
+.coming-soon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: cursive;
+}
+
+.coming-soon::after{
+    content: "";
+    background: url(images/Screenshot.png) center center no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.coming-soon h1 {
+  cursor: default;
+  position: absolute;
+  top: 8rem;
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+.coming-soon h1 span {
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  -webkit-animation: bounce 0.3s ease infinite alternate;
+  font-size: 10rem;
+  color: black;
+}
+
+.coming-soon h1 span:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+}
+
+.coming-soon h1 span:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+}
+
+.coming-soon h1 span:nth-child(4) {
+  -webkit-animation-delay: 0.3s;
+}
+
+.coming-soon h1 span:nth-child(5) {
+  -webkit-animation-delay: 0.4s;
+}
+
+.coming-soon h1 span:nth-child(6) {
+  -webkit-animation-delay: 0.5s;
+}
+
+.coming-soon h1 span:nth-child(7) {
+  -webkit-animation-delay: 0.6s;
+}
+
+.coming-soon h1 span:nth-child(8) {
+  -webkit-animation-delay: 0.2s;
+}
+
+@-webkit-keyframes bounce {
+    100% {
+        top: -20px;
+    }
+}
